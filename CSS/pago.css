@@ -1,0 +1,135 @@
+
+/* diseño de la página de pago */
+.pago-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* formulario de pago */
+.pago-formulario {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* bloque del formulario */
+.pago-bloque {
+  margin-bottom: 28px;
+}
+
+/* último bloque */
+.pago-bloque:last-of-type {
+  margin-bottom: 0;
+}
+
+/* título del bloque */
+.pago-bloque h3 {
+  font-size: 17px;
+  color: #000;
+  margin: 0 0 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* nota del bloque */
+.pago-nota-bloque {
+  font-size: 12px;
+  color: #777;
+  margin: 8px 0 16px;
+}
+
+/* fila con dos campos */
+.fila-dos-campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* menú desplegable */
+.pago-formulario select {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* resumen de la compra */
+.pago-resumen {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* título del resumen */
+.pago-resumen h3 {
+  font-size: 17px;
+  color: #000;
+  margin: 0 0 16px;
+}
+
+/* lista de productos */
+.pago-resumen-items {
+  max-height: 260px;
+  overflow-y: auto;
+  margin-bottom: 16px;
+}
+
+/* línea del resumen */
+.pago-resumen-linea {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* nombre del producto */
+.pago-resumen-linea .nombre {
+  flex: 1;
+}
+
+/* fila total a pagar */
+.pago-resumen .fila-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  font-weight: bold;
+  color: #000;
+  padding-top: 14px;
+  margin-bottom: 18px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* botón confirmar pago */
+.btn-pagar-confirmar {
+  width: 100%;
+  max-width: none;
+}
+
+/* enlace volver al carrito */
+.pago-volver {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #777;
+  text-decoration: none;
+}
+
+/* enlace al pasar el mouse */
+.pago-volver:hover {
+  color: rgb(189, 45, 43);
+}
+
+

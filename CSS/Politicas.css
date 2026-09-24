@@ -1,0 +1,172 @@
+/* reinicia caja de estos elementos */
+header,main,section,div,img,footer {
+  box-sizing: border-box;
+}
+
+/* estilo general del body */
+body{
+  background-color: #F5E6CA;
+  margin: 0%;
+}
+
+/* estilo del encabezado */
+header{
+    background-color: #8E94A0;
+    position: sticky;
+    text-align: left;
+    color: white;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0%;
+    gap: 230px;
+
+}
+
+/* color al pasar el mouse */
+header a:hover{
+  color: #EDE2CB;
+}
+
+
+/* estilos del menú */
+.navegacion{
+    display: flex; 
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 30px;
+    
+    
+}
+
+/* enlaces del menú */
+.navegacion a {
+    text-decoration: none;
+    color: black;
+}
+
+/* contenido de la página legal */
+.contenido-legal {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 0 60px;
+  color: #000;
+}
+
+/* título legal */
+.contenido-legal h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* subtítulo legal */
+.contenido-legal .subtitulo {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* subtítulo de sección */
+.contenido-legal h2 {
+  font-size: 1.4rem;
+  color: rgb(189, 45, 43);
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.contenido-legal p,
+/* texto legal */
+.contenido-legal li {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #222;
+}
+
+/* lista legal */
+.contenido-legal ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* estilo del footer */
+.pie-pagina {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 60px 20px 60px;
+  position: relative; 
+}
+
+/* línea separadora */
+.linea-divisoria {
+  border: 0;
+  height: 2px;
+  background-color: #fff;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+}
+
+/* columnas del footer */
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* columna del footer */
+.columna-footer {
+  flex: 1;
+}
+
+/* título de columna */
+.columna-footer h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-family: serif;
+  font-weight: bold;
+}
+
+/* lista de enlaces */
+.columna-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* elemento de la lista */
+.columna-footer ul li {
+  margin-bottom: 10px;
+}
+
+/* enlace de la lista */
+.columna-footer ul li a {
+  color: #fff;
+  text-decoration: none; 
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+/* enlace al pasar el mouse */
+.columna-footer ul li a:hover {
+  color: rgb(189, 45, 43); 
+}
+
+/* contenedor del logo */
+.caja-logo-footer {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 900px;
+  margin: 20px auto 0 auto;
+}
+
+/* tamaño del logo */
+.caja-logo-footer img {
+  width: 90px; 
+  height: auto;
+}

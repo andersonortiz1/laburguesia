@@ -1,0 +1,378 @@
+
+*,
+*::before,
+/* aplica a todos los elementos */
+*::after {
+  box-sizing: border-box;
+}
+
+/* estilo general de imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Telefono */
+
+/* estilo del encabezado */
+header {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  row-gap: 10px;
+  padding: 10px 4%;
+  text-align: center;
+}
+
+/* logo del encabezado */
+header > a:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* tamaño del logo */
+header img[width="100"] {
+  width: 56px !important;
+  height: 56px !important;
+}
+
+/* estilos del menú */
+.navegacion {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  row-gap: 10px;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* íconos del menú */
+.navegacion img[width="80"] {
+  width: 34px !important;
+  height: 34px !important;
+}
+
+/* íconos pequeños del menú */
+.navegacion img[width="50"] {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+/* caja del buscador */
+.caja-busqueda {
+  width: 92vw;
+  max-width: 320px;
+  right: -40px;
+}
+
+/* cuadrícula de productos */
+.menu-grid {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* tarjeta de producto */
+.card {
+  height: auto;
+  min-height: 300px;
+}
+
+/* imagen de la tarjeta */
+.card img {
+  height: 160px;
+}
+
+/* título de la categoría */
+.titulo-categoria {
+  font-size: 2rem;
+}
+
+/* sección de producto */
+.producto {
+  grid-template-columns: 1fr;
+  padding: 22px;
+  margin: 15px auto 40px;
+}
+
+/* imagen del producto */
+.producto-imagen {
+  padding-top: 0;
+}
+
+/* nombre del producto */
+.producto-info h1 {
+  font-size: 24px;
+}
+
+/* lista de ingredientes */
+.ingredientes {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.columna,
+/* columna de extras */
+.columna.agregar {
+  width: 100%;
+}
+
+/* columna de extras */
+.agregar {
+  border-left: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.carrito-lista-pagina,
+/* resumen del carrito */
+.carrito-resumen {
+  max-width: 100%;
+}
+
+/* elemento del carrito */
+.item-carrito {
+  flex-wrap: wrap;
+}
+
+/* fila del total */
+.carrito-resumen .fila-total {
+  font-size: 18px;
+}
+
+/* botones de acción */
+.carrito-acciones {
+  justify-content: center;
+  gap: 10px;
+}
+
+/* cada botón de acción */
+.carrito-acciones > * {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+/* contenido de la página legal */
+.contenido-legal {
+  width: 92%;
+  padding: 25px 0 45px;
+}
+
+/* título legal */
+.contenido-legal h1 {
+  font-size: 1.7rem;
+}
+
+/* subtítulo de sección */
+.contenido-legal h2 {
+  font-size: 1.15rem;
+}
+
+/* Footer */
+/* estilo del footer */
+.pie-pagina {
+  padding: 30px 6% 20px;
+}
+
+/* columnas del footer */
+.contenedor-footer {
+  flex-direction: column;
+  gap: 28px;
+  text-align: center;
+}
+
+/* contenedor del logo */
+.caja-logo-footer {
+  justify-content: center;
+}
+
+/* Login */
+/* contenedor del login */
+.login-contenedor {
+  display: flex;
+  justify-content: center;
+  padding: 30px 4% 60px;
+}
+
+/* tarjeta del login */
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 30px 22px;
+}
+
+/* Tablet */
+/* estilos para tablet */
+@media (min-width: 600px) {
+  header {
+    gap: 24px;
+    padding: 10px 3%;
+  }
+
+  .navegacion {
+    font-size: 19px;
+    gap: 18px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card {
+    height: 380px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .titulo-categoria {
+    font-size: 2.4rem;
+  }
+
+  .contenido-legal h1 {
+    font-size: 2.1rem;
+  }
+
+  .carrito-acciones > * {
+    flex: 0 1 auto;
+  }
+
+  /* contenedor de imágenes */
+  .contenedor-imagenes {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Computadora */
+/* estilos para computadora */
+@media (min-width: 900px) {
+  header {
+    gap: 70px;
+    padding: 0 0%;
+  }
+
+  header > a:first-child {
+    width: auto;
+  }
+
+  .navegacion {
+    font-size: 26px;
+    gap: 26px;
+    width: auto;
+  }
+
+  header img[width="100"] {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .navegacion img[width="80"] {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .navegacion img[width="50"] {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .producto {
+    grid-template-columns: 45% 55%;
+  }
+
+  .ingredientes {
+    flex-direction: row;
+  }
+
+  .columna,
+  .columna.agregar {
+    width: 50%;
+  }
+
+  .agregar {
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: none;
+    padding-left: 30px;
+    padding-top: 0;
+  }
+
+  .contenedor-footer {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .caja-logo-footer {
+    justify-content: flex-end;
+  }
+
+  .carrito-acciones {
+    justify-content: flex-end;
+  }
+}
+
+/* estilos para pantallas grandes */
+@media (min-width: 1200px) {
+  .menu-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  header {
+    gap: 130px;
+  }
+
+  .navegacion {
+    font-size: 30px;
+    gap: 30px;
+  }
+}
+
+/* Tv */
+/* estilos para pantallas de tv */
+@media (min-width: 1600px) {
+  /* estilo general del body */
+  body {
+    font-size: 18px;
+  }
+
+  .contenido-menu,
+  .contenido-legal,
+  .producto,
+  .contenedor-footer,
+  .carrito-lista-pagina,
+  .carrito-resumen {
+    max-width: 1500px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  .card {
+    height: 420px;
+  }
+
+  header {
+    gap: 220px;
+    padding: 14px 5%;
+  }
+
+  .navegacion {
+    font-size: 34px;
+  }
+
+  .titulo-categoria {
+    font-size: 3.4rem;
+  }
+}

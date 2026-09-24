@@ -1,0 +1,110 @@
+
+/* contenedor del buscador */
+.buscador-contenedor {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* botón de búsqueda */
+.btn-buscar {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  line-height: 0;
+}
+
+/* caja del buscador */
+.caja-busqueda {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 12px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  width: 340px;
+  max-width: 90vw;
+  z-index: 1000;
+}
+
+/* muestra la caja */
+.caja-busqueda.activo {
+  display: block;
+}
+
+/* campo de búsqueda */
+#inputBusqueda {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* campo enfocado */
+#inputBusqueda:focus {
+  border-color: rgb(0, 0, 0);
+}
+
+/* lista de resultados */
+.resultados-busqueda {
+  display: none;
+  max-height: 320px;
+  overflow-y: auto;
+  margin-top: 8px;
+  border-top: 1px solid #eee;
+}
+
+/* muestra resultados */
+.resultados-busqueda.activo {
+  display: block;
+}
+
+/* elemento resultado */
+.resultado-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 8px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* resultado al pasar el mouse */
+.resultado-item:hover {
+  background-color: #000000;
+}
+
+/* nombre del resultado */
+.resultado-nombre {
+  font-weight: 600;
+}
+
+/* categoría del resultado */
+.resultado-categoria {
+  flex-shrink: 0;
+  font-size: 11px;
+  color: #555;
+  background-color: #eee;
+  padding: 3px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+/* mensaje sin resultados */
+.sin-resultados {
+  padding: 12px 8px;
+  color: #888;
+  font-size: 14px;
+  text-align: center;
+}

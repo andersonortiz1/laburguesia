@@ -1,0 +1,102 @@
+
+/* contenedor del login */
+.login-contenedor {
+  max-width: 420px;
+  margin: 60px auto 100px;
+  padding: 0 20px;
+}
+
+/* tarjeta del login */
+.login-card {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 40px 34px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* título del login */
+.login-card h1 {
+  font-size: 26px;
+  margin: 0 0 6px;
+  color: #000;
+  text-align: center;
+}
+
+/* subtítulo del login */
+.login-card .login-subtitulo {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+/* campo del formulario */
+.campo-login {
+  margin-bottom: 18px;
+}
+
+/* etiqueta del campo */
+.campo-login label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+/* casilla de texto */
+.campo-login input {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* campo enfocado */
+.campo-login input:focus {
+  outline: none;
+  border-color: #8e94a0;
+}
+
+/* botón iniciar sesión */
+.btn-login {
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-radius: 250px;
+  background-color: #d6bd8b;
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s ease;
+}
+
+/* botón al pasar el mouse */
+.btn-login:hover {
+  background-color: #ddd1bd;
+}
+
+/* mensaje de error */
+.error-login {
+  display: none;
+  background-color: #fceaea;
+  color: rgb(189, 45, 43);
+  border: 1px solid rgba(189, 45, 43, 0.3);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+/* nota bajo el login */
+.login-nota {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  margin-top: 20px;
+}

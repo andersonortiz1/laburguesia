@@ -1,0 +1,409 @@
+/* estilo general del body */
+body{
+  background-color: #F5E6CA;
+  margin: 0%;
+}
+
+/* estilo del encabezado */
+header{
+    background-color: #8E94A0;
+    position: sticky;
+    text-align: left;
+    color: white;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0%;
+    gap: 230px;
+
+}
+
+/* color al pasar el mouse */
+header a:hover{
+  color: #EDE2CB;
+}
+
+
+/* estilos del menú */
+.navegacion{
+    display: flex; 
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 30px;
+    
+    
+}
+
+/* enlaces del menú */
+.navegacion a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* contenedor de texto */
+.texto {
+  margin-top: 0%;
+}
+
+.texto .imagen,
+/* estilo de imagen principal */
+img.imagen {
+  display: block;
+  width: 100%;
+  height: 623px;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+}
+
+/* contenedor principal */
+.contenedor-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  gap: 50px;
+}
+
+/* contenedor de imágenes */
+.contenedor-imagenes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+/* imágenes dentro del contenedor */
+.contenedor-imagenes img {
+  width: 50%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* contenedor de texto */
+.contenedor-texto {
+  flex: 1;
+  text-align: left;
+}
+
+/* título del contenedor */
+.contenedor-texto h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  font-family: serif;
+  letter-spacing: 1px;
+}
+
+/* párrafo del contenedor */
+.contenedor-texto p {
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* estilo del botón */
+.btn {
+  display: inline-block;
+  background-color: rgb(189, 45, 43);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+/* botón al pasar el mouse */
+.btn:hover {
+  background-color: rgb(189, 45, 43);
+}
+
+
+/* sección destacada */
+.section-capricho {
+  background-color: rgb(189, 45, 43); 
+  color: white;
+  padding: 40px 20px;
+}
+
+/* título destacado */
+.destacadas{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+}
+
+/* título de la sección */
+.titulo-capricho {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+/* bloque de contenido */
+.bloque-capricho {
+  display: flex;
+  align-items: center;      
+  justify-content: center;
+  max-width: 850px;   
+  margin: 0 auto;     
+  gap: 30px;               
+}
+
+/* columnas de la reseña */
+.contenedor-foto, .texto-reseña {
+  flex: 1;
+}
+
+/* imagen de la reseña */
+.contenedor-foto img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+/* texto de la reseña */
+.texto-reseña{
+  text-align: left;
+}
+
+/* ícono de comillas */
+.comillas {
+  font-size: 3.5rem;
+  line-height: 1;
+  display: block;
+}
+
+/* nombre del autor */
+.autor {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* sección del menú principal */
+.menuprincipal {
+  background-color: #000; 
+  color: #fff;
+  padding: 50px 20px;
+}
+
+/* título del menú */
+.menuprincipal h1{
+  text-align: center;
+  font-size: 50px;
+  color:rgb(189, 45, 43)
+}
+
+/* tarjeta con imagen y texto */
+.imagen-tarjeta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto 40px auto; 
+  gap: 30px;
+}
+
+/* invierte el orden de la tarjeta */
+.imagen-tarjeta.inversa {
+  flex-direction: row-reverse;
+}
+
+/* columnas de la tarjeta */
+.imagen-menu, .texto-menu {
+  flex: 1;
+}
+
+/* imagen de la tarjeta */
+.imagen-menu img {
+  width: 400px;
+  height: 350px;
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+/* Títulos y textos */
+/* título de la tarjeta */
+.texto-menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: serif; 
+}
+
+/* descripción de la tarjeta */
+.texto-menu p {   
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+
+/* sección página 3 */
+.pag3{
+    background-color: rgb(189, 45, 43);
+}
+
+
+
+/* texto de la sección 3 */
+.pag3 p{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    max-width: 450px;
+    color: white;
+}
+
+
+/* sección página 4 */
+.pag4 {
+    align-items: center;
+    gap: 20px;
+    background-color:black;
+    color: aliceblue;
+}
+
+/* contenedor de la sección 4 */
+.pag4 div{
+    display: flex;
+    
+}
+
+/* título de la sección 4 */
+.pag4 h3{
+    padding-left: 180px;
+
+}
+/* texto en cursiva */
+.pag4 em{
+    padding-top: 90px;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+/* enlace de la sección 5 */
+.pag5 a{
+    color: white;
+}
+
+/* fondo oscuro */
+.fondo{
+    background-color: black;
+}
+
+/* estilo del footer */
+.pie-pagina {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 60px 20px 60px;
+  position: relative; 
+}
+
+/* línea separadora */
+.linea-divisoria {
+  border: 0;
+  height: 2px;
+  background-color: #fff;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+}
+
+/* columnas del footer */
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* columna del footer */
+.columna-footer {
+  flex: 1;
+}
+
+/* título de columna */
+.columna-footer h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-family: serif;
+  font-weight: bold;
+}
+
+/* lista de enlaces */
+.columna-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* elemento de la lista */
+.columna-footer ul li {
+  margin-bottom: 10px;
+}
+
+/* enlace de la lista */
+.columna-footer ul li a {
+  color: #fff;
+  text-decoration: none; 
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+/* enlace al pasar el mouse */
+.columna-footer ul li a:hover {
+  color: rgb(189, 45, 43); 
+}
+
+/* contenedor del logo */
+.caja-logo-footer {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 900px;
+  margin: 20px auto 0 auto;
+}
+
+/* tamaño del logo */
+.caja-logo-footer img {
+  width: 90px; 
+  height: auto;
+}
+
+/* Responsi */
+
+/* estilos para pantallas medianas */
+@media (max-width: 1024px){
+
+    header{
+        gap: 50px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .navegacion{
+        gap: 15px;
+        font-size: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* imagen de la tarjeta */
+    .imagen-menu img{
+        width: 300px;
+        height: auto;
+    }
+}
+
+
+

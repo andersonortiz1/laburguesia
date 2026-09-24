@@ -1,0 +1,191 @@
+
+/* contenedor del ícono carrito */
+.carrito-contenedor {
+  position: relative;
+  display: inline-flex;
+}
+
+/* burbuja contador del carrito */
+.badge-carrito {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: rgb(189, 45, 43);
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+/* título de la categoría */
+.titulo-categoria {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000;
+}
+
+/* cuadrícula de productos */
+.menu-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* tarjeta de producto */
+.card {
+  width: 100%;
+  height: 380px;
+  padding: 15px;
+  background-color: #d6bd8b;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  overflow: hidden;
+}
+
+/* tarjeta al pasar el mouse */
+.card:hover {
+  background-color: #ddd1bd;
+  transform: translateY(-4px);
+}
+
+/* imagen de la tarjeta */
+.card img {
+  cursor: pointer;
+  width: 100%;
+  max-width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* nombre del producto */
+.card h2 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* texto en cursiva */
+.card em {
+  color: #000;
+}
+
+/* descripción del producto */
+.card p {
+  color: #000;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* enlace para regresar */
+.regresar {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px 0 0 5%;
+}
+
+/* enlace al pasar el mouse */
+.regresar:hover {
+  color: rgb(189, 45, 43);
+}
+
+/* sección de producto */
+.producto {
+  max-width: 1100px;
+  margin: 25px auto 60px;
+  background: #d6bd8b;
+  border-radius: 15px;
+  padding: 40px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  gap: 40px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* imagen del producto */
+.producto-imagen {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+/* tamaño de imagen */
+.producto-imagen img {
+  width: 100%;
+  max-width: 380px;
+  object-fit: contain;
+}
+
+/* nombre del producto */
+.producto-info h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+/* precio del producto */
+.producto-info h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* texto de descripción */
+.descripcion {
+  color: #000;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* zona del botón comprar */
+.comprar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* botón agregar al carrito */
+.carrito {
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  height: 48px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 50px;
+  background: #0099cc;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* botón al pasar el mouse */
+.carrito:hover {
+  background: #007fa8;
+}
+
+/* botón deshabilitado */
+.carrito:disabled {
+  background: #2fa84f;
+  cursor: default;
+}
