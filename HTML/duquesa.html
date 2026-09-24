@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+        <title> Platillos - La Burguesia</title>
+        <link rel="icon" type="image/png" href="../IMG/Png/Logo 1.png">
+        <link rel="stylesheet" type="text/css" href="../css/pagina2.css">
+        <link rel="stylesheet" type="text/css" href="../css/platillos.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/responsive.css">
+       <link rel="stylesheet" type="text/css" href="../css/buscador.css">
+</head>
+
+<body>
+
+        <header>
+            <a href="../index.html"> <img src="../IMG/Jpg/Logo 2.jpg" width="100" height="100"/></a>
+
+            <nav class="navegacion">
+        
+            <a href="../index.html"> Inicio </a>
+            <a href="../HTML/pagina1.html"> Postres </a>
+            <a href="../HTML/pagina2.html"> Platillos </a>
+            <a href="../HTML/pagina3.html"> Banquetes </a>
+            <a href="../HTML/Pagina4.html"> Combos </a>
+            <div class="buscador-contenedor">
+                <button type="button" id="btnBuscar" class="btn-buscar" aria-label="Buscar">
+                    <img src="../IMG/Png/Lupa.png" width="80" height="80">
+                </button>
+                <div class="caja-busqueda" id="cajaBusqueda">
+                    <input type="text" id="inputBusqueda" placeholder="Buscar en el menu..." autocomplete="off">
+                    <div class="resultados-busqueda" id="resultadosBusqueda"></div>
+                </div>
+            </div>
+            <div class="carrito-contenedor">
+                <a href="Carrito.html" id="btnCarrito">
+                    <img src="../IMG/Png/Carrito.png" width="80" height="80">
+                    <span id="contadorCarrito" class="badge-carrito">0</span>
+                </a>
+            </div>
+            <a href="Login.html" id="btnCuenta"> <img src="../IMG/Png/Registrer.png" width="50" height="50"></a>
+
+            </nav>
+        </header>
+
+
+<main>
+
+    <a href="pagina2.html" class="regresar"> <h2> ← Regresar </h2> </a>
+
+    <section class="producto">
+
+        <div class="producto-imagen">
+            <img src="../IMG/Png/Res 2.png">
+        </div>
+
+        <div class="producto-info">
+
+            <h1> Duquesa </h1>
+
+            <h2>$9.99</h2>
+
+            <p class="descripcion">
+                Res bien dorado, doble queso, pepinillos crujientes, mostaza suave y una lluvia de cebolla frita. Una explosión de sabor en cada mordida
+            </p>
+
+
+<div class="ingredientes">
+
+    <div class="columna">
+        <h3> Quitar ingredientes</h3>
+
+        <label>
+            <input type="checkbox"> Lechuga
+        </label>
+
+        <label>
+            <input type="checkbox"> Tomate
+        </label>
+
+        <label>
+            <input type="checkbox"> Cebolla
+        </label>
+
+        <label>
+            <input type="checkbox"> Mayonesa
+        </label>
+    </div>
+
+    <div class="columna agregar">
+        <h3> Agregar ingredientes</h3>
+
+        <label>
+            <input type="checkbox"> Tocino <span>+$1.00</span>
+        </label>
+
+        <label>
+            <input type="checkbox"> Queso <span>+$0.50</span>
+        </label>
+
+        <label>
+            <input type="checkbox"> Pepinillos <span>+$0.50</span>
+        </label>
+    </div>
+
+</div>
+
+            <div class="comprar">
+
+                <button class="carrito" onclick="agregarAlCarrito('duquesa', this)">
+                    Agregar al carrito
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+    <footer class="pie-pagina">
+        <hr class="linea-divisoria">
+
+            <div class="contenedor-footer">
+
+                <div class="columna-footer"> 
+                    <h3> Recursos</h3>
+                    <ul>
+                        <li>
+
+
+                        <li>
+                            <a href="Politicas.html"> Políticas </a>
+                        </li>
+
+                        <li>
+                            <a href="Condiciones.html"> Condiciones </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="columna-footer"> 
+                    <h3> Sobre nosotros</h3>
+                    <ul>
+                        <li>
+                            <a href="Servicios.html"> Servicios </a>
+                        </li>
+
+
+
+
+                        <li>
+                            <a href="Clientes.html"> Clientes </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="columna-footer">
+                    <h3> Sobre Nosotros</h3>
+                    <ul>
+                        <li>
+                            <a> Número telefonico +503 7485-8338 </a>
+                        </li>
+
+                        <li>
+                            <a> Laburguesia@gmail.com  </a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="caja-logo-footer">
+                <img src="../IMG/Png/logonegro.png" alt="logo negross">
+            </div>
+
+        </footer>
+
+    <script src="../js/tienda.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script>const RUTA_BASE = "";</script>
+    <script src="../js/buscador.js"></script>
+</body>
+</html>
